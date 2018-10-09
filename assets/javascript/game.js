@@ -25,7 +25,7 @@ document.onkeyup = function(event) {
         left = 9;
         guesses.length = 0;
         var randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
-        psychicGuess.push(randomLetter);
+        psychicGuess.push(randomLetter[i]);
     }
 
     else if (!/^[a-z0-9_-]*$/i.test(playerGuess)) {
